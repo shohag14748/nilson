@@ -1,0 +1,225 @@
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner .svg-wrap{
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    right: -70px;
+}
+.banner .svg-wrap .container{
+    position: relative;
+    height: 500px
+}
+.banner svg{
+    width: 550px;
+    position: relative;
+    z-index: 999;
+    margin-left: auto;
+    display: block;
+}
+.banner .item{
+    background-size: cover;
+    background-position: center;
+    padding-top: 120px;
+}
+.banner .item .container{
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+}
+.banner .owl-controls{
+    display: none;
+}
+
+
+
+.banner .slide__content {
+    padding-bottom: 30px;
+}
+.banner .slide__title {
+    font-size: 75px;
+    color: #ffffff;
+    margin-bottom: 22px;
+    line-height: 90px;
+    padding-right: 40px;
+}
+
+
+.banner .slide__desc {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 33px;
+}
+
+.banner .btn__white {
+    background-color: #ffffff;
+    color: #222222;
+    border: 2px solid #ffffff;
+}
+.banner .btn__white:hover {
+    background-color: #28cb75;
+    color: #ffffff;
+    border-color: #28cb75;
+}
+.banner .btn {
+    text-transform: capitalize;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    width: 170px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 0;
+    text-align: center;
+    padding: 0;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn__video.popup-video {
+    padding-left: 50px;
+    color: #ffffff;
+}
+.btn__video.popup-video:hover {
+    background: none;
+}
+.popup-video {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.btn__video.popup-video .video__player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.popup-video .video__player {
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #28cb75;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+.popup-video .video__player:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border-radius: 50%;
+    border: 2px solid #28cb75;
+}
+
+
+.popup-video .video__player-animation {
+    position: relative;
+    width: 76px;
+    height: 76px;
+}
+
+.btn__video.popup-video .video__player-animation:before {
+    left: -25px;
+    top: -21px;
+    width: 66px;
+    height: 66px;
+}
+
+.popup-video .video__player-animation:before {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    border: 2px solid #28cb75;
+    border-radius: 50%;
+    -webkit-animation: pulsing 1.5s infinite linear;
+    -moz-animation: pulsing 1.5s infinite linear;
+    -ms-animation: pulsing 1.5s infinite linear;
+    -o-animation: pulsing 1.5s infinite linear;
+    animation: pulsing 1.5s infinite linear;
+}
+.mr-40 {
+    margin-right: 40px !important;
+}
+@keyframes pulsing{
+    0%{transform: scale(1);opacity: 1;}
+    100%{transform: scale(1.1);opacity: 0;}
+}
+
+
+@media(max-width:1300px){
+    .banner .svg-wrap{
+        right: -40px;
+    }
+}
+@media(max-width:1200px){
+    .banner .svg-wrap .container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 20px;
+    }
+    .banner .svg-wrap{
+        right: 0px;
+    }
+    .banner svg{
+        width: 40%;
+    }
+    .banner .slide__title {
+        font-size: 65px;
+        color: #ffffff;
+        margin-bottom: 22px;
+        line-height: 70px;
+        padding-right: 40px;
+    }
+}
+
+@media(max-width:990.99px){
+    .banner .item .container{
+        display: flex;
+        align-items: flex-start;
+        min-height: auto;;
+        padding-top: 40px;
+        text-align: center;
+        padding-bottom: 400px;
+    }
+    .banner .svg-wrap{
+        bottom: 0;
+        top: auto;
+    }
+    .banner .svg-wrap .container{
+        display: block;
+        height: auto;
+    }
+    .banner svg{
+        width: 450px;
+        margin: auto;
+    }
+    .banner .slide__title {
+        font-size: 50px;
+        line-height: 60px;
+        padding-right: 0;
+    }
+}
+
+
+@media(max-width:776.99px){
+    .banner .slide__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
