@@ -24,6 +24,15 @@
     background-position: center;
     padding-top: 120px;
 }
+.banner .slide1,.banner .slide4,.banner .slide7{
+    background: linear-gradient(rgba(5,90,168,.8),rgba(5,90,168,.8)) , url(/images/22.jpg)
+}
+.banner .slide2,.banner .slide5,.banner .slide8{
+    background: linear-gradient(rgba(5,90,168,.8),rgba(5,90,168,.8)) , url(/images/33.jpg)
+}
+.banner .slide3,.banner .slide6{
+    background: linear-gradient(rgba(5,90,168,.8),rgba(5,90,168,.8)) , url(/images/1.jpg)
+}
 .banner .item .container{
     display: flex;
     align-items: center;
